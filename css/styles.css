@@ -25,6 +25,7 @@ header {
 	width: 100%;
 	background: #ff6835;
 	height: 70px;
+	z-index: 99; /* Ima max prednost za prikaz nad drugim absolute, fixed itd. elementima. */
 }
 
 .logo img {
@@ -75,14 +76,21 @@ nav.mainNav ul li a:hover {
 	background: url('../img/bkg.png');
 	background-size: cover;
 	background-position: 0px 70px; /* Da ne bi otislo ispod header elementa */
-	text-align: center;
-	padding-top: 200px;
+	text-align: center;	
+}
+
+.coverText {
+	position: absolute;
+	top: 47%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* Nisam morao da koristim position: relative u roditeljskom elementu (header { z-index:99; } */
 }
 
 .cover h1 {
 	font-size: 60px;
 	font-weight: 700;
 	color: white;
+	padding-bottom: 30px;
 }
 
 .cover a {
@@ -93,7 +101,6 @@ nav.mainNav ul li a:hover {
 	color: white;
 	text-transform: uppercase;
 	background: #ff6633;
-	padding-top: 15px;
 }
 
 .cover a:hover {
