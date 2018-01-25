@@ -17,6 +17,9 @@ html, body {
 	*/
 }
 
+  /*--------------*/
+ /*    HEADER    */
+/*--------------*/
 header {
 	position: fixed;
 	width: 100%;
@@ -24,7 +27,7 @@ header {
 	height: 70px;
 }
 
-img {
+.logo img {
 	padding-left: 50px;
 	float: left;
 }
@@ -44,11 +47,7 @@ nav.mainNav ul {
 
 nav.mainNav ul li {
 	display: inline-block;
-	padding: 28px 10px;
-/*  padding mora da se stavi u list elemente
-	da bi se prenio na header, tj. da njegova visina
-	zavisi od elemenata navigacije
- */
+	padding: 28px 10px; /*  padding mora da se stavi u list elemente da bi se prenio na header, tj. da njegova visina zavisi od elemenata navigacije. */
  	text-transform: uppercase;
 }
 
@@ -61,4 +60,43 @@ nav.mainNav ul li a {
 nav.mainNav ul li a:hover {
 	background: #ff865d;
 	padding: 28px 8px 25px 8px;
+}
+/*  Iz nekog razloga je bilo potrebno da svaki LI i A element
+    imaju podesen padding.
+ */
+
+
+  /*--------------*/
+ /*    COVER     */
+/*--------------*/
+.cover {
+	width: 100%;
+	height: 100%;
+	background: url('../img/bkg.png');
+	background-size: cover;
+	background-position: 0px 70px; /* Da ne bi otislo ispod header elementa */
+	text-align: center;
+	padding-top: 200px;
+}
+
+.cover h1 {
+	font-size: 60px;
+	font-weight: 700;
+	color: white;
+}
+
+.cover a {
+	width: 200px;
+	height: 50px;
+	display: inline-block; /* Da bi A prihvatio width i height mora se deklarisati inline-block*/
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	background: #ff6633;
+	padding-top: 15px;
+}
+
+.cover a:hover {
+	background: rgba(63, 32, 29, 0.5);
+	border: 2px solid white;
 }
