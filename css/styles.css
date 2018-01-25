@@ -101,6 +101,7 @@ nav.mainNav ul li a:hover {
 	color: white;
 	text-transform: uppercase;
 	background: #ff6633;
+	padding-top: 15px;
 }
 
 .cover a:hover {
