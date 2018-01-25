@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	font-family: Arial;
+	font-size: 14px;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	/* 
+    visina body i html elementa se obično NE zadaje.
+    Ovde je zadata da bi velicina .cover elementa mogla biti u %
+	*/
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	background: #ff6835;
+}
+
+nav.mainNav {
+	width: 100%;
+}
+
+nav.mainNav ul {
+	list-style: none;
+/*	background: #ff6835;*/ /* boja pozadine je proradila u header elementu */
+	color: white;
+	text-align: center;
+	float: right;
+	padding-right: 50px; /* da bi se cijeli nav element odvojio od desne ivice */
+}
+
+nav.mainNav ul li {
+	display: inline-block;
+	padding: 28px 10px;
+/*  padding mora da se stavi u list elemente
+	da bi se preio na header, tj. da njegova visina
+	zavisi od elemenata navigacije
+ */
+ 	text-transform: uppercase;
+}
+
+nav.mainNav ul li a {
+	text-decoration: none;
+	color: inherit;
+}
+
+nav.mainNav ul li a:hover {
+	background: #ff865d;
+	padding: 28px 10px;
+}
