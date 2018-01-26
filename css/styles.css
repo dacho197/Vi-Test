@@ -17,6 +17,16 @@ html, body {
 	*/
 }
 
+h1 {
+	font-size: 60px;
+	font-weight: 700; 
+}
+
+h2 {
+	font-size: 48px;
+	font-weight: 700;
+}
+
   /*--------------*/
  /*    HEADER    */
 /*--------------*/
@@ -86,14 +96,12 @@ nav.mainNav ul li a:hover {
 	transform: translate(-50%, -50%); /* Nisam morao da koristim position: relative u roditeljskom elementu (header { z-index:99; } */
 }
 
-.cover h1 {
-	font-size: 60px;
-	font-weight: 700;
+.coverText h1 {
 	color: white;
-	padding-bottom: 30px;
+	padding-bottom: 25px;
 }
 
-.cover a {
+.coverText a {
 	width: 200px;
 	height: 50px;
 	display: inline-block; /* Da bi A prihvatio width i height mora se deklarisati inline-block*/
@@ -102,9 +110,87 @@ nav.mainNav ul li a:hover {
 	text-transform: uppercase;
 	background: #ff6633;
 	padding-top: 15px;
+	margin: 0 5px 0 5px;
+	border: 2px solid transparent; /* Rjesenje problema sa pomjeranjem. */
 }
 
-.cover a:hover {
+.coverText a:hover {
 	background: rgba(63, 32, 29, 0.5);
-	border: 2px solid white;
+	border: 2px solid white;  /* Mora postojati u osnovnom stanju (da nije hover) transparent border da ne bi doslo do pomjeranja. */
 }
+
+  /*--------------*/
+ /*   OUR WORK   */
+/*--------------*/
+.ourWork {
+	background: white;
+}
+
+.ourWork h2 {
+	text-align: center;
+	color: #ff6835;
+}
+
+.flex-container {	/* POCEKAT flexbox */
+	padding: 0 28px 50px 28px;
+	margin: 0;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+  	display: flex;
+  	justify-content: space-around;
+}
+
+.wrap {
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-item {
+	width: 25%;
+	padding: 22px 22px 11px 22px;
+}
+/*
+.flex-item img:hover {
+	display: block;
+	<background: url("../img/work.png");
+	background-size: cover; */
+}	/* KRAJ flexbox */
+
+  /*--------------*/
+ /*  WHO ARE WE  */
+/*--------------*/
+.whoAreWe {
+	background: #ff6835;
+}
+
+.whoAreWe h2 {
+	text-align: center;
+	color: black;
+}
+
+.flex-container-2 {	/* POCEKAT flexbox */
+	/*padding: 0 28px 50px 28px;*/
+	margin: 0;
+    -ms-box-orient: horizontal;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -moz-flex;
+    display: -webkit-flex;
+  	display: flex;
+  	justify-content: space-around;
+}
+
+.wrap-2 {
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.flex-item-2 {
+	width: 50%;
+	/*padding: 22px 22px 11px 22px;*/
+}	/* KRAJ flexbox */
