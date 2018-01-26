@@ -27,6 +27,15 @@ h2 {
 	font-weight: 700;
 }
 
+h3 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+p {
+	font-size: 14px;
+}
+
   /*--------------*/
  /*    HEADER    */
 /*--------------*/
@@ -163,8 +172,9 @@ nav.mainNav ul li a:hover {
   /*--------------*/
  /*  WHO ARE WE  */
 /*--------------*/
+
 .whoAreWe {
-	background: #ff6835;
+	background-color: #ff6835; /* ne radi iz nekog razloga */
 }
 
 .whoAreWe h2 {
@@ -172,8 +182,10 @@ nav.mainNav ul li a:hover {
 	color: black;
 }
 
+
 .flex-container-2 {	/* POCEKAT flexbox */
-	/*padding: 0 28px 50px 28px;*/
+	background:  #ff6835;	/* Zato sto nece da prikaze nad section elementom. */
+	padding: 0 35px 0px 35px;
 	margin: 0;
     -ms-box-orient: horizontal;
     display: -webkit-box;
@@ -183,6 +195,8 @@ nav.mainNav ul li a:hover {
     display: -webkit-flex;
   	display: flex;
   	justify-content: space-around;
+	align-content: center;
+
 }
 
 .wrap-2 {
@@ -192,5 +206,23 @@ nav.mainNav ul li a:hover {
 
 .flex-item-2 {
 	width: 50%;
-	/*padding: 22px 22px 11px 22px;*/
+	padding: 20px 15px 20px 15px;
 }	/* KRAJ flexbox */
+
+.male h3 {
+	color: white;
+	float: right;
+	width: 50%;
+}
+
+.male p {
+	color: white;
+	float: right;
+	width: 50%;
+}
+
+.male img {
+	float: left;
+	width: 50%;
+	padding-right: 20px;
+} 
